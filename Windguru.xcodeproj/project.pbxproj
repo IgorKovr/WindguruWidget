@@ -11,7 +11,40 @@
 		B15DFDB82BDD3DB10048734B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DFDB72BDD3DB10048734B /* ContentView.swift */; };
 		B15DFDBA2BDD3DB20048734B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15DFDB92BDD3DB20048734B /* Assets.xcassets */; };
 		B15DFDBD2BDD3DB20048734B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15DFDBC2BDD3DB20048734B /* Preview Assets.xcassets */; };
+		B15DFDCB2BDD3DD20048734B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15DFDCA2BDD3DD20048734B /* WidgetKit.framework */; };
+		B15DFDCD2BDD3DD20048734B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15DFDCC2BDD3DD20048734B /* SwiftUI.framework */; };
+		B15DFDD02BDD3DD20048734B /* windguru_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DFDCF2BDD3DD20048734B /* windguru_widgetBundle.swift */; };
+		B15DFDD22BDD3DD20048734B /* windguru_widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DFDD12BDD3DD20048734B /* windguru_widget.swift */; };
+		B15DFDD42BDD3DD20048734B /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DFDD32BDD3DD20048734B /* AppIntent.swift */; };
+		B15DFDD62BDD3DD30048734B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15DFDD52BDD3DD30048734B /* Assets.xcassets */; };
+		B15DFDDB2BDD3DD30048734B /* windguru-widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B15DFDC82BDD3DD20048734B /* windguru-widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B15DFDE82BDD49FB0048734B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DFDE02BDD400E0048734B /* WebView.swift */; };
+		B15DFDE92BDD49FD0048734B /* WebView+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15DFDE22BDD41150048734B /* WebView+UIKit.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B15DFDD92BDD3DD30048734B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B15DFDAA2BDD3DB10048734B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B15DFDC72BDD3DD20048734B;
+			remoteInfo = "windguru-widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B15DFDDF2BDD3DD30048734B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B15DFDDB2BDD3DD30048734B /* windguru-widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B15DFDB22BDD3DB10048734B /* Windguru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Windguru.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +53,19 @@
 		B15DFDB92BDD3DB20048734B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B15DFDBC2BDD3DB20048734B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B15DFDBE2BDD3DB20048734B /* Windguru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Windguru.entitlements; sourceTree = "<group>"; };
+		B15DFDC82BDD3DD20048734B /* windguru-widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "windguru-widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15DFDCA2BDD3DD20048734B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B15DFDCC2BDD3DD20048734B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B15DFDCF2BDD3DD20048734B /* windguru_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windguru_widgetBundle.swift; sourceTree = "<group>"; };
+		B15DFDD12BDD3DD20048734B /* windguru_widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windguru_widget.swift; sourceTree = "<group>"; };
+		B15DFDD32BDD3DD20048734B /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		B15DFDD52BDD3DD30048734B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B15DFDD72BDD3DD30048734B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15DFDD82BDD3DD30048734B /* windguru_widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = windguru_widget.entitlements; sourceTree = "<group>"; };
+		B15DFDE02BDD400E0048734B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		B15DFDE22BDD41150048734B /* WebView+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebView+UIKit.swift"; sourceTree = "<group>"; };
+		B15DFDE42BDD41A00048734B /* windguru-widgetExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "windguru-widgetExtensionRelease.entitlements"; sourceTree = "<group>"; };
+		B15DFDE52BDD428A0048734B /* WindguruRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WindguruRelease.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +76,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B15DFDC52BDD3DD20048734B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15DFDCD2BDD3DD20048734B /* SwiftUI.framework in Frameworks */,
+				B15DFDCB2BDD3DD20048734B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B15DFDA92BDD3DB10048734B = {
 			isa = PBXGroup;
 			children = (
+				B15DFDE42BDD41A00048734B /* windguru-widgetExtensionRelease.entitlements */,
 				B15DFDB42BDD3DB10048734B /* Windguru */,
+				B15DFDCE2BDD3DD20048734B /* windguru-widget */,
+				B15DFDC92BDD3DD20048734B /* Frameworks */,
 				B15DFDB32BDD3DB10048734B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B15DFDB22BDD3DB10048734B /* Windguru.app */,
+				B15DFDC82BDD3DD20048734B /* windguru-widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,8 +111,11 @@
 		B15DFDB42BDD3DB10048734B /* Windguru */ = {
 			isa = PBXGroup;
 			children = (
+				B15DFDE52BDD428A0048734B /* WindguruRelease.entitlements */,
 				B15DFDB52BDD3DB10048734B /* WindguruApp.swift */,
 				B15DFDB72BDD3DB10048734B /* ContentView.swift */,
+				B15DFDE02BDD400E0048734B /* WebView.swift */,
+				B15DFDE22BDD41150048734B /* WebView+UIKit.swift */,
 				B15DFDB92BDD3DB20048734B /* Assets.xcassets */,
 				B15DFDBE2BDD3DB20048734B /* Windguru.entitlements */,
 				B15DFDBB2BDD3DB20048734B /* Preview Content */,
@@ -69,6 +131,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B15DFDC92BDD3DD20048734B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B15DFDCA2BDD3DD20048734B /* WidgetKit.framework */,
+				B15DFDCC2BDD3DD20048734B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B15DFDCE2BDD3DD20048734B /* windguru-widget */ = {
+			isa = PBXGroup;
+			children = (
+				B15DFDCF2BDD3DD20048734B /* windguru_widgetBundle.swift */,
+				B15DFDD12BDD3DD20048734B /* windguru_widget.swift */,
+				B15DFDD32BDD3DD20048734B /* AppIntent.swift */,
+				B15DFDD52BDD3DD30048734B /* Assets.xcassets */,
+				B15DFDD72BDD3DD30048734B /* Info.plist */,
+				B15DFDD82BDD3DD30048734B /* windguru_widget.entitlements */,
+			);
+			path = "windguru-widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +163,34 @@
 				B15DFDAE2BDD3DB10048734B /* Sources */,
 				B15DFDAF2BDD3DB10048734B /* Frameworks */,
 				B15DFDB02BDD3DB10048734B /* Resources */,
+				B15DFDDF2BDD3DD30048734B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B15DFDDA2BDD3DD30048734B /* PBXTargetDependency */,
 			);
 			name = Windguru;
 			productName = Windguru;
 			productReference = B15DFDB22BDD3DB10048734B /* Windguru.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B15DFDC72BDD3DD20048734B /* windguru-widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15DFDDC2BDD3DD30048734B /* Build configuration list for PBXNativeTarget "windguru-widgetExtension" */;
+			buildPhases = (
+				B15DFDC42BDD3DD20048734B /* Sources */,
+				B15DFDC52BDD3DD20048734B /* Frameworks */,
+				B15DFDC62BDD3DD20048734B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "windguru-widgetExtension";
+			productName = "windguru-widgetExtension";
+			productReference = B15DFDC82BDD3DD20048734B /* windguru-widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +203,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					B15DFDB12BDD3DB10048734B = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B15DFDC72BDD3DD20048734B = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -118,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				B15DFDB12BDD3DB10048734B /* Windguru */,
+				B15DFDC72BDD3DD20048734B /* windguru-widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +239,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B15DFDC62BDD3DD20048734B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15DFDD62BDD3DD30048734B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +254,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15DFDE92BDD49FD0048734B /* WebView+UIKit.swift in Sources */,
+				B15DFDE82BDD49FB0048734B /* WebView.swift in Sources */,
 				B15DFDB82BDD3DB10048734B /* ContentView.swift in Sources */,
 				B15DFDB62BDD3DB10048734B /* WindguruApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B15DFDC42BDD3DD20048734B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15DFDD22BDD3DD20048734B /* windguru_widget.swift in Sources */,
+				B15DFDD02BDD3DD20048734B /* windguru_widgetBundle.swift in Sources */,
+				B15DFDD42BDD3DD20048734B /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B15DFDDA2BDD3DD30048734B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B15DFDC72BDD3DD20048734B /* windguru-widgetExtension */;
+			targetProxy = B15DFDD92BDD3DD30048734B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B15DFDBF2BDD3DB20048734B /* Debug */ = {
@@ -200,7 +335,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +392,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -268,6 +403,7 @@
 		B15DFDC22BDD3DB20048734B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Windguru/Windguru.entitlements;
@@ -295,9 +431,10 @@
 		B15DFDC32BDD3DB20048734B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Windguru/Windguru.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Windguru/WindguruRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -314,6 +451,64 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ikovr.Windguru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B15DFDDD2BDD3DD30048734B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "windguru-widget/windguru_widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WJ745D7M93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "windguru-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "windguru-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ikovr.Windguru.windguru-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B15DFDDE2BDD3DD30048734B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "windguru-widgetExtensionRelease.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WJ745D7M93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "windguru-widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "windguru-widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ikovr.Windguru.windguru-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -336,6 +531,15 @@
 			buildConfigurations = (
 				B15DFDC22BDD3DB20048734B /* Debug */,
 				B15DFDC32BDD3DB20048734B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15DFDDC2BDD3DD30048734B /* Build configuration list for PBXNativeTarget "windguru-widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B15DFDDD2BDD3DD30048734B /* Debug */,
+				B15DFDDE2BDD3DD30048734B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
